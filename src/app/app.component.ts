@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'Proyecto Angular';
-}
+  ngOnInit() {
+}}
 
 
 
@@ -39,8 +40,6 @@ export class AppComponent implements OnInit {
 //   public matematicas(a: number, b: number, c: number, d: number) {
 //     return a * b - c - d;
 //   }
-// }
 
-ngOnInit() {
-  
-}
+
+
