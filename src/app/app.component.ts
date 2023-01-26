@@ -11,35 +11,34 @@ export class AppComponent implements OnInit {
 }}
 
 
+primerNumero = 2;
+segundoNumero = 3;
 
-//   primerNumero = 2;
-//   segundoNumero = 3;
+tercerNumero = 5;
+cuartoNumero = 8;
 
-//   tercerNumero = 5;
-//   cuartoNumero = 8;
+constructor() {
 
-//   constructor() {
+console.log('Constructor');
+let a, b, d: number;
+let nombre: string;
 
-//     console.log('Constructor');
-//     let a, b, d: number;
-//     let nombre: string;
+ a = 5;
+ b = 6;
+ d = 9;
 
-//     a = 5;
-//     b = 6;
-//     d = 9;
+ nombre = 'El resultado de mi función es '
 
-//     nombre = 'El resultado de mi función es '
+const resultadoOperacion = this.matematicas(a, b, 6, d);
+const resultadoSegundaOperacion = this.matematicas(this.primerNumero, 5, this.tercerNumero, this.cuartoNumero);
 
-//     const resultadoOperacion = this.matematicas(a, b, 6, d);
-//     const resultadoSegundaOperacion = this.matematicas(this.primerNumero, 5, this.tercerNumero, this.cuartoNumero);
+console.log(nombre + resultadoOperacion);
+console.log(nombre + resultadoSegundaOperacion); 
 
-//     console.log(nombre + resultadoOperacion);
-//     console.log(nombre + resultadoSegundaOperacion); 
-
-//   }
-//   public matematicas(a: number, b: number, c: number, d: number) {
-//     return a * b - c - d;
-//   }
-
+}
+public matematicas(a: number, b: number, c: number, d: number) {
+ return a * b - c - d;
+}
+}
 
 
